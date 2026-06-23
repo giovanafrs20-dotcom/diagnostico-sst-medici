@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diagnóstico Empresarial de SST - Medici</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- TELA INICIAL -->
+    <div id="inicio" class="card active">
+
+        <img src="logo-medici.png.png" class="logo">
+
+        <h1>Diagnóstico Empresarial de SST</h1>
+
+        <p class="subtitulo">
+            Descubra em apenas 2 minutos o nível de risco da sua empresa em relação às exigências de Saúde e Segurança do Trabalho.
+        </p>
+
+        <input type="text" id="nome" placeholder="Nome Completo">
+
+        <input type="text" id="empresa" placeholder="Empresa">
+
+        <input type="text" id="whatsapp" placeholder="WhatsApp">
+
+        <input type="email" id="email" placeholder="E-mail">
+
+        <button onclick="iniciarDiagnostico()">
+            INICIAR DIAGNÓSTICO
+        </button>
+
+    </div>
+
+    <!-- QUIZ -->
+    <div id="quiz" class="card">
+
+        <div class="topo">
+
+            <div id="contador">
+                Pergunta 1 de 10
+            </div>
+
+            <div class="barra">
+                <div id="progresso"></div>
+            </div>
+
+        </div>
+
+        <h2 id="pergunta"></h2>
+
+        <div id="opcoes"></div>
+
+        <button onclick="proximaPergunta()">
+            PRÓXIMA
+        </button>
+
+    </div>
+
+    <!-- RESULTADO -->
+    <div id="resultado" class="card">
+
+        <img src="logo-medici.png" class="logo">
+
+        <div id="iconeResultado"></div>
+
+        <h1 id="tituloResultado"></h1>
+
+        <div id="pontuacaoFinal"></div>
+
+        <p id="textoResultado"></p>
+
+        <a
+          id="btnWhatsapp"
+          target="_blank"
+          class="botaoWhatsapp">
+          QUERO UMA AVALIAÇÃO GRATUITA
+        </a>
+
+        <div class="rodape">
+
+            Resultado gerado pela Clínica Medici
+
+            <br>
+
+            Especialista em Saúde e Segurança do Trabalho
+
+            <br><br>
+
+            Instagram:
+            @MEDICIDOTRABALHO
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
